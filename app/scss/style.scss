@@ -1,7 +1,8 @@
+@import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'vars';
 @import 'global';
-@import 'fonts';
 
 
 .header {
@@ -95,8 +96,6 @@
     color: $default;
   }
 }
-
-
 
 
 .footer-top {
@@ -207,7 +206,82 @@
 }
 
 
-
+.top-slider {
+  &__wrapper {
+    padding-top: 220px;
+    padding-bottom: 45px;
+    background-image: url('../images/top-slider-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+  }
+  &__content {
+    max-width: 418px;
+  }
+  &__title {
+    margin-bottom: 45px;
+    @extend %Rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    color: $default;
+  }
+  &__text {
+    margin-bottom: 25px;
+    @extend %Rubik-400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #436372;
+  }
+  &__link {
+    display: inline-block;
+    padding: 24px 100px 21px 15px;
+    background-color: #a3bbc8;
+    @extend %Rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+    color: #fff;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 23px;
+      height: 10px;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background-image: url('../images/btn-arr-right.svg');
+    }
+  }
+  .slick-dots {
+    margin: 200px 0 0;
+    display: flex;
+    justify-content: center;
+    li {
+      margin: 0 6px;
+      line-height: 0;
+    }
+    button {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: none;
+      background-color: #fde3cc;
+      cursor: pointer;
+      @extend %Rubik-500;
+      font-size: 11px;
+      line-height: 9px;
+      color: $default;
+    }
+  }
+  .slick-active {
+    button {
+      background-color: #fff;
+    }
+  }
+}
 
 
 

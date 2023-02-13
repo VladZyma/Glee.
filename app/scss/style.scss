@@ -525,6 +525,16 @@
 }
 
 
+.video {
+  &__inner {
+    padding: 185px 0;
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/video-bg.jpg');
+  }
+}
+
+
 
 // body {
 //   @extend %DMSans-500;

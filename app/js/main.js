@@ -6,5 +6,16 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 3000,
   });
-  const mixer = mixitup('.products__items');
+
+ 
+  const mixerOne = mixitup('.products__items',{
+    controls: {
+      scope: 'local'
+    }
+  });
+  const mixerTwo = mixitup('.new-design__items',{
+    controls: {
+      scope: 'local'
+    }
+  });
 })

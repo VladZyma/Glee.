@@ -56,3 +56,13 @@ body {
     }
   }
 }
+
+.partners {
+  padding: 265px 0 90px;
+  background-color: #fef7f0;
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

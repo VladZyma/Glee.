@@ -572,6 +572,7 @@
 .articles {
 
   margin-bottom: -170px;
+
   &__top {
     margin-bottom: 37px;
     display: flex;
@@ -670,6 +671,113 @@
   &__date-link {
     margin-right: 35px;
   }
+}
+
+.modal-top {
+  padding: 30px 0 30px;
+  text-align: center;
+  background-color: #edf1f4;
+
+  &__title {
+    margin-bottom: 10px;
+    @extend %Rubik-300;
+    font-size: 36px;
+    line-height: 24px;
+    color: #222933;
+  }
+}
+
+.modal {
+  max-width: 470px;
+  margin: 0 auto;
+  padding: 155px 0 120px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__form {
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #f6f6f6;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 25px;
+    @extend %Rubik-400;
+    font-size: 14px;
+    line-height: 14px;
+    color: $modal-default;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    height: 60px;
+    border: 2px solid #f6f6f6;
+  }
+
+  &__btn {
+    padding: 0;
+    margin-bottom: 30px;
+    border: none;
+    cursor: pointer;
+    @extend %Rubik-500;
+    font-size: 18px;
+    line-height: 60px;
+    color: #fff;
+    background-color: #a3bbc8;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label-checkbox {
+    margin: 0;
+    line-height: 48px;
+    display: flex;
+    align-items: normal;
+    input {
+      margin: 0 12px 0 0;
+    }
+  }
+
+  &__lost-pass-link {
+    @extend %Rubik-400;
+    font-size: 14px;
+    line-height: 48px;
+    color: $modal-default;
+  }
+
+  &__text {
+    margin: 0 auto 20px;
+    @extend %Rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $modal-default;
+  }
+
+  &__create-account-link {
+    width: 100%;
+    text-align: center;
+    @extend %Rubik-500;
+    font-size: 18px;
+    line-height: 56px;
+    color: #243f4d;
+    border: 2px solid #a3bbc8;
+  }
+}
+
+.partners-login {
+  padding: 80px 90px;
 }
 
 

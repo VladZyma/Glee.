@@ -37,6 +37,20 @@ body {
   color: $title;
 }
 
+.progress-title {
+  @extend %DMSans-700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #4c4c4c;
+}
+
+.progress-num {
+  @extend %DMSans-700;
+  font-size: 36px;
+  line-height: 38px;
+  color: $default;
+}
+
 .filter-buttons {
   display: flex;
   justify-content: center;

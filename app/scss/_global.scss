@@ -105,3 +105,29 @@ body {
     color: #222933;
   }
 }
+
+.pagination {
+  margin-top: 110px;
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    display: block;
+    margin: 0 7px;
+    padding: 10px 20px;
+    border: 1px solid #a3bbc8;
+    @extend %Rubik-400;
+    color: $default;
+    line-height: 30px;
+  }
+
+  .pagination__link--active {
+    color: #fff;
+    background-color: #a3bbc8;
+  }
+
+  &__list {
+    margin: 0;
+    display: flex;
+  }
+}

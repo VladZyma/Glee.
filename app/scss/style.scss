@@ -1799,6 +1799,7 @@
   &__content-date::before {
     // background-image: url('../images/icons/calendar.svg');
   }
+
   &__content-date {
     svg {
       position: absolute;
@@ -1806,6 +1807,7 @@
       left: 0;
       transform: translateY(-50%);
     }
+
     path {
       fill: #fff;
     }
@@ -1917,9 +1919,311 @@
 
   &__recent-content-date {
     color: #9a9a9a;
+
     path {
-      fill:#9a9a9a;
+      fill: #9a9a9a;
     }
+  }
+}
+
+.blog-details {
+
+  &__text {
+    h4 {
+      margin-bottom: 30px;
+      @extend %Rubik-400;
+      font-size: 36px;
+      line-height: 26px;
+      color: #333333;
+    }
+
+    h5 {
+      margin-bottom: 25px;
+      @extend %Rubik-500;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    h6 {
+      margin-bottom: 25px;
+      @extend %Rubik-500;
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    p {
+      margin-bottom: 30px;
+      @extend %Rubik-400;
+      line-height: 30px;
+    }
+
+    blockquote {
+      margin-bottom: 45px;
+      padding: 35px 20px;
+      @extend %Rubik-400;
+      line-height: 30px;
+      border-left: 6px solid #a3bbc8;
+      background-color: #edf1f4;
+
+      span {
+        display: block;
+        margin-top: 15px;
+        padding-left: 40px;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 20px;
+          height: 4px;
+          background-color: #a3bbc8;
+        }
+      }
+    }
+  }
+
+  &__box {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__left-img {
+    margin-right: 30px;
+    width: 323px;
+    height: 210px;
+    object-fit: cover;
+  }
+
+  &__author {
+    margin-bottom: 60px;
+    padding: 25px 20px 25px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  &__author-info {
+    display: flex;
+  }
+
+  &__author-img {
+    margin-right: 30px;
+  }
+
+  &__author-info-box {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__author-name {
+    margin-bottom: 10px;
+    @extend %Rubik-500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+  }
+
+  &__author-position {
+    @extend %Rubik-400;
+    line-height: 30px;
+    color: #666666;
+  }
+
+  &__author-inner {
+    @extend %Rubik-400;
+    line-height: 26px;
+    color: #333333;
+  }
+
+  &__tags {
+    margin-top: 6px;
+    margin-bottom: 12px;
+
+    span {
+      margin-right: 26px;
+    }
+  }
+
+  &__tags-link {
+    color: #999999;
+  }
+
+  &__share {
+    display: flex;
+  }
+
+  &__share-link {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__form-input,
+  &__form-textarea {
+    padding: 0 20px;
+    line-height: 30px;
+    color: #333333;
+    border: 1px solid #e5e5e5;
+    outline: none;
+    position: relative;
+
+    &::placeholder {
+      @extend %Rubik-400;
+      line-height: 36px;
+      color: #999999;
+    }
+
+    &:focus {
+      border-color: #a3bbc8;
+    }
+  }
+
+  &__form-input {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: 360px center;
+
+    &+.blog-details__form-input {
+      margin-left: 25px;
+    }
+  }
+
+  &__form-input--name {
+    background-image: url('../images/icons/input-name.svg');
+  }
+  &__form-input--email {
+    background-image: url('../images/icons/input-email.svg');
+  }
+
+  &__form-textarea {
+    margin-bottom: 30px;
+    padding-right: 40px;
+    width: 100%;
+    height: 120px;
+    resize: none;
+    background-image: url('../images/icons/input-textarea.svg');
+    background-repeat: no-repeat;
+    background-position: 790px 10px;
+  }
+
+  &__form-btn {
+    padding: 15px 42px;
+    @extend %Rubik-400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #a3bbc8;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.comments {
+  padding-bottom: 80px;
+
+  &__title {
+    margin-bottom: 55px;
+    @extend %Rubik-700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #436372;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item--next {
+    padding-top: 30px;
+  }
+
+  &__img {
+    margin-right: 30px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  &__content--next {
+    padding-top: 30px;
+    margin-top: -30px;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  &__content-author {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__content-author-name {
+    @extend %Rubik-700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #436372;
+  }
+
+  &__content-author-date {
+    @extend %Rubik-400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #9e9e9e;
+  }
+
+  &__content-text {
+    margin-bottom: 10px;
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #565872;
+  }
+
+  &__content-link {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-right: 18px;
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #565872;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 13px;
+      height: 15px;
+      background-image: url('../images/icons/arrow-right.svg');
+    }
+  }
+
+  &__content-reply {
+    display: flex;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    border-top: 1px solid #e0e0e0;
   }
 }
 
@@ -1932,3 +2236,9 @@
 
 
 @import 'media';
+
+
+
+
+//  <div class="comments__content-reply comments__content"><img class="comments__img" src="./images/blog/comments-reply.jpg" alt="author image"><div class="comments__inner"><div class="comments__content"><div class="comments__content-author"><a class="comments__content-author-name" href="#">Shannon S. Williams </a><span class="comments__content-author-date">Add 11 Oct 2020 </span></div><p class="comments__content-text">Lorem ipsum dolor sit amet,
+//  consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra </p><a class="comments__content-link" href="#">Reply </a></div></div></div>

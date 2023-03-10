@@ -2106,6 +2106,7 @@
   &__form-input--name {
     background-image: url('../images/icons/input-name.svg');
   }
+
   &__form-input--email {
     background-image: url('../images/icons/input-email.svg');
   }
@@ -2227,6 +2228,146 @@
   }
 }
 
+.contact {
+  padding: 155px 0;
+
+  &__subtitle {
+    @extend %Poppins-700;
+    line-height: 20px;
+    text-align: center;
+    color: #a3bbc8;
+  }
+
+  &__title {
+    margin-bottom: 55px;
+  }
+
+  &__items {
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 370px;
+    padding: 60px 50px 70px;
+    text-align: center;
+    background-color: #fbfbfb;
+    border: 3px solid transparent;
+    transition: all .3s;
+
+    &:hover {
+      border: 3px solid #a3bbc8;
+
+      .contact__item-link {
+        background-color: #a3bbc8;
+      }
+
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__item-link {
+    margin: 0 auto 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 17px;
+    background-color: #fff;
+  }
+
+  &__item-title {
+    margin-bottom: 20px;
+    @extend %DMSans-700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #222222;
+  }
+
+  &__item-address,
+  &__item-email,
+  &__item-phone {
+    @extend %Rubik-400;
+    line-height: 30px;
+    color: #565872;
+  }
+
+  &__item-address {
+    margin: 0 auto;
+    max-width: 170px;
+    font-style: normal;
+  }
+
+  &__item-email,
+  &__item-phone {
+    display: block;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    margin-right: 50px;
+    max-width: 620px;
+  }
+
+  &__form-input {
+    padding: 0 20px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    background-color: #fafafa;
+    background-position: 260px center;
+
+    &+.contact__form-input {
+      margin-left: 15px;
+    }
+
+    &::placeholder {
+      @extend %Rubik-400;
+      line-height: 30px;
+      color: #565872;
+    }
+  }
+
+  &__form-textarea {
+    margin-bottom: 30px;
+    padding: 0 40px 0 20px;
+    width: 620px;
+    height: 175px;
+    line-height: 30px;
+    border: none;
+    background-color: #fafafa;
+    background-position: 580px 9px;
+
+    &::placeholder {
+      @extend %Rubik-400;
+      line-height: 30px;
+      color: #565872;
+    }
+  }
+
+  &__form-btn {
+    padding: 0 40px;
+    display: block;
+    @extend %Poppins-600;
+    font-size: 15px;
+    line-height: 50px;
+    border-radius: 4px;
+  }
+}
+
+#map {
+  width: 500px;
+  height: 336px;
+}
+
 // body {
 //   @extend %DMSans-500;
 //   font-size: 16px;
@@ -2236,9 +2377,3 @@
 
 
 @import 'media';
-
-
-
-
-//  <div class="comments__content-reply comments__content"><img class="comments__img" src="./images/blog/comments-reply.jpg" alt="author image"><div class="comments__inner"><div class="comments__content"><div class="comments__content-author"><a class="comments__content-author-name" href="#">Shannon S. Williams </a><span class="comments__content-author-date">Add 11 Oct 2020 </span></div><p class="comments__content-text">Lorem ipsum dolor sit amet,
-//  consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra </p><a class="comments__content-link" href="#">Reply </a></div></div></div>

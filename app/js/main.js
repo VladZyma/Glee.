@@ -74,7 +74,6 @@ $(function () {
     $($(this).attr('href')).addClass('product-tabs__content-item--active');
   })
 
- 
   const mixerOne = mixitup('.products__items',{
     controls: {
       scope: 'local'
